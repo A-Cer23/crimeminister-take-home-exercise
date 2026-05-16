@@ -3,11 +3,9 @@ export { IngestionWorkflow } from "./workflow";
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
-    const instanceId = url.searchParams.get("instanceId");
 
-    if (instanceId) {
-      const instance = await env.INGESTION_WORKFLOW.get(instanceId);
-      return Response.json(await instance.status());
+    if (request.method !== "POST" || url.pathname !== "/ingest") {
+      return new Response("Not Found", { status: 404 });
     }
 
     const instance = await env.INGESTION_WORKFLOW.create();
