@@ -36,7 +36,7 @@ npx wrangler login
 Create the D1 database:
 
 ```bash
-npx wrangler d1 create ingestion-db
+npx wrangler d1 create ingestion-db --update-config=false
 ```
 
 Copy the `database_id` from the output and update `wrangler.jsonc` under `d1_databases`.
