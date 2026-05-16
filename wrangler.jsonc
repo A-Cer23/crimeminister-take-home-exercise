@@ -13,6 +13,13 @@
 	"upload_source_maps": true,
 	"compatibility_flags": [
 		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+		"binding": "ingestion_db",
+		"database_name": "ingestion-db",
+		"database_id": "5c22a5e8-738e-45d9-bd6f-352dff6294bd"
+		}
 	]
 	/**
 	 * Smart Placement
