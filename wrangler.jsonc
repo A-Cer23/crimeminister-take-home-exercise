@@ -18,7 +18,8 @@
 		{
 		"binding": "ingestion_db",
 		"database_name": "ingestion-db",
-		"database_id": "5c22a5e8-738e-45d9-bd6f-352dff6294bd"
+		"database_id": "5c22a5e8-738e-45d9-bd6f-352dff6294bd",
+		"migrations_dir": "./src/db/migrations"
 		}
 	]
 	/**
